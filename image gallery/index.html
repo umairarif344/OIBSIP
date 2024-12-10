@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="projects">
+        <div class="container">
+
+            <div class="items-links">
+                <span class="item-link menu-active" data-name="all">All </span>
+                <span class="item-link" data-name="baby">Baby</span>
+                <span class="item-link" data-name="family">Family</span>
+                <span class="item-link" data-name="nature">Nature</span>
+            </div>
+
+            <div class="gallery">
+                <div class="project-img" data-name="baby"><img src="./images/baby (1).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="family"><img src="./images/family (1).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="nature"><img src="./images/nature (1).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="baby"><img src="./images/baby (2).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="family"><img src="./images/family (2).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="nature"><img src="./images/nature (2).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="baby"><img src="./images/baby (3).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="family"><img src="./images/family (3).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="nature"><img src="./images/nature (3).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="baby"><img src="./images/baby (4).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="family"><img src="./images/family (4).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="nature"><img src="./images/nature (4).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="baby"><img src="./images/baby (5).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="family"><img src="./images/family (5).jpg" onclick="FullView(this.src)"></div>
+                <div class="project-img" data-name="nature"><img src="./images/nature (5).jpg" onclick="FullView(this.src)"></div>
+            </div>
+
+            
+        </div>
+        <div id="FullImageView">
+            <img id="FullImage">
+            <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
